@@ -1,0 +1,28 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    /* border:1px solid white; */
+}
+
+.pop_event {
+    z-index:99;
+    position: absolute;
+    top:-50%;
+    left:-10%; 
+    width:142.5%;
+    height:190%;
+    padding-top:700px;
+    background:rgba(0,0,0,0.2);
+}
+
+.popimg {
+    position: fixed;
+    margin-top:500px;
+    width:600px;
+    height:600px;
+    /* border:3px solid white; */
+}
+.pop_img>img {
+    width:100%;
+}

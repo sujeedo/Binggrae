@@ -1,0 +1,1750 @@
+
+
+ @font-face {
+  font-family: godoM;
+  src: url(../font/GodoM.ttf);
+}
+
+@font-face {
+  font-family: godoB;
+  src: url(../font/GodoB.ttf);
+}
+
+@font-face {
+  font-family: danjunghae;
+  src: url(../font/Cafe24Danjunghae.ttf);
+}
+
+@font-face {
+  font-family: dangdanghae;
+  src: url(../font/Cafe24Dangdanghae.ttf);
+}
+
+@font-face {
+  font-family: tmonsori;
+  src: url(../font/TmonMonsori.ttf);
+}
+
+@font-face {
+  font-family: maplestoryB;
+  src: url(../font/Maplestory\ Bold.ttf);
+}
+
+@font-face {
+  font-family: maplestoryL;
+  src: url(../font/Maplestory\ Light.ttf);
+}
+
+@font-face {
+  font-family: BinggraeB;
+  src: url(../font/Binggrae2Bold.ttf);
+}
+
+@font-face {
+  font-family: BinggraeL;
+  src: url(../font/Binggrae2Light.ttf);
+}
+/*============================================================= 전체 폰트속성 */
+#container{font-family  : BinggraeB }
+
+/*============================================================= 전체 폭 */
+ 
+
+
+
+
+ #container {width: 100%;
+    height: 100vh;
+    margin:0 auto;
+    } 
+
+
+  #main_page {width : 85.3%;
+      height : 1180px;
+      }
+
+
+.top-line {width: 80.6%;
+    height: 80px;
+    display: flex;
+   
+     /* border: 1px solid red; */
+    }  
+  
+#main_page  .header_img {width : 100%;
+                          height: 250px;
+                          position : relative;
+                          overflow : hidden;
+                          }
+
+#main_page  .header_img > img  {width :100%; 
+                                 height: 250px;
+                                 position : absolute;
+                                 margin-left: -830px;
+                                 }
+/*============================================================= main page */
+
+.bx-wrapper 
+    {
+    /* -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc; */
+    /* box-shadow: 0 0 5px #ccc; */
+    /* border: 5px solid #fff; */
+    /* background: #fff; */
+    width : 100% !important;
+    height : 630px !important;
+    }
+
+.contents5 {display :none;}
+/* 1200px 시 바뀐는 미디어쿼리 box */
+   
+.contents {width : 100%;
+          height : 600px;
+          display : flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          overflow : hidden;
+          }
+
+.contents input {display : none;
+                  }
+
+.product_tb {display :none;}
+/* 1200px 바뀌는 미디어쿼리 4box */
+
+  
+.contents .product { width: 260px!important;
+                     height : 228px!important;
+                     margin: 20px 20px;
+                     box-sizing : border-box;
+                    }
+
+.contents > .product img {width : 100%;
+                          height : 174px;
+                         }
+
+.contents > .product  .product_letter {width : 100%;
+                                       height : 48px; 
+                                       background-color : #00c0a7;
+                                       text-align : center;
+                                       font-size : 1.5em;
+                                       color : white;
+                                       text-align : center;
+                                       padding-top : 5px;
+                                       }
+
+.contents .product:hover{border:3px solid  #00c0a7;}
+
+.contents label:hover {cursor:pointer;}
+/* 일반 hover */
+                          
+
+.contents5 .product_tb:hover{border:3px solid  #00c0a7;}          
+/* 미디어쿼리 1200px hover */
+.contents5 label:hover {cursor:pointer;}
+
+
+
+
+.contents .p_1{margin-left :220px !important;
+                margin-top :80px!important;
+                } 
+                      
+.contents .p_2{ margin-left :220px !important;} 
+
+
+.contents .p_3 {margin-top :80px!important;}
+
+/* 각각의 margin 값으로 위치를 조정함. p_1 , p_2 , p_3 */
+
+/* ============================================================== 사이드 버튼 ==================================== */
+.bx-wrapper .bx-prev {left : 7%!important;
+                      top :80%!important;
+                      background: url('./images/left_btn.png') no-repeat center;
+                      background-size : 90%!important;
+                      z-index:9!important;
+                      }
+
+.bx-wrapper .bx-next {right: 9%!important;
+                      top :80%!important;
+                      background: url('./images/right_btn.png') no-repeat center;
+                      background-size : 90%!important;
+                      z-index:9!important;
+                      }
+
+/*=================================================== bxslider 하단 버튼 ============================================*/
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto 
+{bottom: 0px;
+  width: 100%;
+  height : 0px;
+  display :none;
+}
+/* =============================================================== 하단 div ====================================*/
+
+#main_page #price_cal  {width : 100%;
+                        height : 266px;
+                        background : rgba(189,189,189,0.4); 
+                        display : flex;
+                        flex-direction: row;
+                        flex-wrap : wrap;
+                        }
+
+#price_cal li {list-style-type : none;}
+
+
+
+
+                                 
+
+
+#price_cal > .result_price {width : 70%;
+                            height : 180px;
+                            display : flex;
+                            flex-direction : row;
+                            flex-wrap : wrap;
+                            margin : 20px 0px;
+                            margin-left : 120px;
+                           }
+
+
+
+
+#price_cal   .storage_place {width : 70%;
+                             height : 180px;
+                             background-color: #00c0a7;;
+                             overflow:scroll;
+                             }
+/* ==================================각각 계산값========================================= */
+
+.storage_place .bana {width: 775px;
+                      height: 20px;
+                      padding:20px;
+                      font-size: 1.5em;
+                      }
+
+.bana input {width: 60px; height : 26px; 
+            padding:2px;
+            font-weight: bolder;
+            margin:2px;
+            background-color: #B2EBF4;
+            }
+
+
+.storage_place .bana td {width : 200px;
+                         height: 30px;
+                         text-align: left;
+                         }
+
+
+.storage_place #box_1 {width : 100%;
+ height : 54px;
+ padding-top: -5px;
+ color:white;
+ display:none;
+ padding-left:0px;}
+
+
+
+.storage_place #box_2 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;} 
+                        
+
+.storage_place #box_3 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                   }  
+                          
+.storage_place #box_4 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                            
+
+.storage_place #box_5 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+.storage_place #box_6 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+
+.storage_place #box_7 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                  
+
+.storage_place #box_8 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                    
+.storage_place #box_9 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                      
+                                      
+.storage_place #box_10 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                        
+
+.storage_place #box_11 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                          
+                                          
+  .storage_place #box_12 {width : 100%;
+    height : 54px;
+    padding-top: -5px;
+    color:white;
+    display:none;
+    padding-left:0px;
+                    } 
+                                            
+                                            
+.storage_place #box_13 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  } 
+                                              
+                                              
+.storage_place #box_14 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                                                
+.storage_place #box_15 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  } 
+                                                  
+                                                  
+.storage_place #box_16 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }  
+                       
+.storage_place #box_17 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                       
+
+.storage_place #box_18 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                       
+
+.storage_place #box_19 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  } 
+                       
+.storage_place #box_20 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                       
+                       
+ .storage_place #box_21 {
+  width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+                       
+                       
+  .storage_place #box_22 {width : 100%;
+   height : 54px;
+   padding-top: -5px;
+   color:white;
+   display:none;
+   padding-left:0px;
+                   }
+                        
+
+  .storage_place #box_23 {width : 100%;
+    height : 54px;
+    padding-top: -5px;
+    color:white;
+    display:none;
+    padding-left:0px;
+                    }
+                         
+                         
+
+  .storage_place #box_24 {width : 100%;
+   height : 54px;
+   padding-top: -5px;
+   color:white;
+   display:none;
+   padding-left:0px;
+                  }
+                        
+                        
+  .storage_place #box_25 {width : 100%;
+    height : 54px;
+    padding-top: -5px;
+    color:white;
+    display:none;
+    padding-left:0px;
+                    }                        
+ 
+                         
+  .storage_place #box_26 {width : 100%;
+   height : 54px;
+   padding-top: -5px;
+   color:white;
+   display:none;
+   padding-left:0px;
+                   }
+                        
+                        
+.storage_place #box_27 {width : 100%;
+height : 54px;
+padding-top: -5px;
+color:white;
+display:none;
+padding-left:0px;
+                }
+                         
+                         
+
+.storage_place #box_28 {width : 100%;
+ height : 54px;
+ padding-top: -5px;
+ color:white;
+ display:none;
+ padding-left:0px;
+                 }
+
+
+.storage_place #box_29 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+
+.storage_place #box_30 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+
+.storage_place #box_31 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+
+.storage_place #box_32 {width : 100%;
+  height : 54px;
+  padding-top: -5px;
+  color:white;
+  display:none;
+  padding-left:0px;
+                  }
+
+
+/* ============================================================================================ */
+#price_cal  .price_result_img {width : 29%;
+  height : 180px;
+  position : relative;
+  }
+
+
+#price_cal .price_result_img  img {width:100%; 
+  height:180px;
+  margin-left:5px;
+  }
+
+#price_cal .price_result_img > .checkbt input {position : absolute;
+  top: -12px;
+  right : -5px;
+  width : 30px;
+  height: 50px;
+  }
+        
+        
+#price_cal > .price_bt  button {width : 100%;
+  height : 70px;
+  background-color :  #00c0a7;
+  font-size: 1.7em;
+  color: white;
+  margin:5px 0px;
+  }  
+        
+        
+.price_bt {width : 10%;
+           height : 150px;
+           display : flex;
+           flex-direction : column;
+           margin : 53px 0px;
+           margin-left : 10px;
+           }
+/* ========================================================== =================================  */
+
+/*============================================================= 1757px  ===============================================================================*/
+
+@media screen and (max-width : 1770px) {
+  
+  #main_page > .header_img > img  {width :100%; 
+    height: 250px;
+    position : absolute;
+    margin-left: -796px;
+   }                     
+
+
+
+.contents .product {width: 240px!important;
+                    height : 208px!important;
+                    margin: 20px 20px;
+                    box-sizing : border-box;
+                    }
+
+
+.contents > .product  img {width : 100%;
+                      height : 154px;
+                      }
+                      
+
+.contents > .product  .product_letter {width : 100%;
+                                height : 48px; 
+                                background-color : #00c0a7;;
+                                text-align : center;
+                                font-size : 1.4em;
+                                color : white;
+                                text-align : center;
+                                padding-top : 5px;
+                               }
+                      
+
+.contents .p_1{margin-left :190px !important;} 
+
+
+.contents .p_2{margin-left :190px !important;} 
+
+
+        
+.bx-wrapper .bx-prev {left : 6%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+
+.bx-wrapper .bx-next {right: 7%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+
+#main_page #price_cal  {width : 100%;
+          height : 266px;
+          background : rgba(189,189,189,0.4);
+          display : flex;
+          flex-direction: row;
+          flex-wrap : wrap;
+          }
+
+
+#price_cal li {list-style-type : none;}            
+
+
+                                   
+
+
+#price_cal > .result_price {
+              width : 70%;
+              height : 180px;
+              display : flex;
+              flex-direction : row;
+              flex-wrap : wrap;
+              margin : 20px 0px;
+              margin-left : 130px;
+             
+             }
+
+           
+
+#price_cal   .storage_place {
+                width : 70%;
+                height : 180px;
+                background-color: #00c0a7;
+                
+                }
+
+
+.storage_place .bana  {width: 775px;
+      height: 20px;
+      padding:20px;
+      font-size: 1.3em;
+     }
+
+
+      
+
+ 
+
+.bana input {width: 60px; height : 26px; 
+            
+            padding:2px;
+            font-weight: bolder;
+            margin:2px;
+            background-color: #B2EBF4;
+            }
+
+
+.storage_place .bana td { width : 200px;
+                          height: 30px;
+                          text-align: left;
+                          }
+
+
+                              
+
+
+
+#price_cal  .price_result_img {
+                width : 29%;
+                height : 180px;
+                position : relative;
+                }
+
+#price_cal .price_result_img  img {width:100%; 
+                  height:180px;
+                  margin-left:5px;
+                  }
+
+
+ .price_bt {width : 10%;
+  height : 150px;
+  display : flex;
+  flex-direction : column;
+  margin : 52px 0px;
+  margin-left : 30px;
+ 
+ }
+
+                
+#price_cal > .price_bt  button {width : 100%;
+  height : 70px;
+  background-color :  #00c0a7;
+  font-size: 1.7em;
+  color: white;
+  margin:5px 0px;
+  }             
+    
+    
+#price_cal .price_result_img > .checkbt > input {position : absolute;
+  top: -11px;
+  right : -5px;
+  width : 30px;
+  height: 50px;
+  }                 
+
+
+}
+/*============================================================= 1560px  ===============================================================================*/
+
+@media screen and (max-width : 1560px) {
+
+  #main_page >    .header_img > img {width :100%; 
+    height: 250px;
+    position : absolute;
+  }
+
+#main_page > .header_img > img {width :100%; 
+  height: 250px;
+  position : absolute;
+  margin-left: -700px;
+  }  
+
+
+.bxslider  .contents .product {width: 200px!important;
+  height : 197px!important;
+  margin: 20px 20px;
+  box-sizing : border-box;
+  }
+
+
+.contents > .product  img {width : 100%;
+    height : 144px;
+    }
+    
+
+.contents > .product  .product_letter {width : 100%;
+  height : 47px; 
+  background-color : #00c0a7;;
+  text-align : center;
+  font-size : 1.1em;
+  color : white;
+  text-align : center;
+  padding-top : 10px;
+  }  
+
+
+.contents .p_1{margin-left :170px !important;
+          margin-top : 100px!important;
+        } 
+    
+.contents .p_2{margin-left :170px!important;} 
+
+
+.contents .p_3 {margin-top :100px!important;}
+        
+
+.bx-wrapper .bx-prev {left : 5%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+.bx-wrapper .bx-next {right: 10%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+#main_page #price_cal  {
+          width : 100%;
+          height : 266px;
+          background : rgba(189,189,189,0.4);
+          display : flex;
+          flex-direction: row;
+          flex-wrap : wrap;
+          }
+
+#price_cal li {list-style-type : none;}            
+
+
+                                   
+
+
+#price_cal > .result_price {width : 70%;
+  height : 180px;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  margin : 40px 0px;
+  margin-left : 70px;
+  }
+
+
+
+
+#price_cal  .storage_place {width : 70%;
+  height : 180px;
+  background-color : #00c0a7;;
+  }
+
+
+
+.storage_place .bana  {width: 775px;
+  height: 20px;
+  padding:20px;
+  font-size: 1.2em;
+  
+  }
+
+ .bana input {width: 60px; height : 26px; 
+  padding:2px;
+  font-weight: bolder;
+  margin:2px;
+  background-color: #B2EBF4;
+  }
+
+
+.storage_place .bana td { width : 200px;
+  height: 30px;
+  text-align: left;
+  
+  }
+
+
+#price_cal  .price_result_img {width : 29%;
+  height : 180px;
+  position : relative;
+  }
+
+
+
+#price_cal .price_result_img > img { 
+                       width:100%; 
+                       height:180px;
+                      }
+
+
+#price_cal .price_result_img > .checkbt input {position : absolute;
+  top: -11px;
+  right : 0px;
+  width : 30px;
+  height: 50px;
+  }
+
+        
+  .price_bt {width : 10%;
+    height : 150px;
+    display : flex;
+    flex-direction : column;
+    margin : 70px 0px;
+    margin-left : 20px;
+    }
+                      
+                 
+    #price_cal > .price_bt  button {width : 100%;
+      height : 70px;
+      background-color :  #00c0a7;
+      font-size: 1.7em;
+      color: white;
+      margin:5px 0px;
+      }
+    
+}
+/*============================================================= 1444px  ===============================================================================*/
+
+@media screen and (max-width : 1444px) {
+
+
+#main_page > .header_img > img  {width :100%; 
+  height: 220px;
+  position : absolute;
+  margin-left: -595px;
+  }
+
+
+.bxslider  .contents .product {width: 187px!important;
+    height : 187px!important;
+    margin: 20px 10px;
+    box-sizing : border-box;
+    }
+
+
+.contents > .product  img {width : 100%;
+  height : 144px;
+  }
+      
+
+.contents  .product  .product_letter {width : 100%;
+  height : 38px; 
+  background-color : #00c0a7;;
+  text-align : center;
+  font-size : 1em;
+  color : white;
+  text-align : center;
+  padding-top : 10px;
+  }
+      
+
+.contents .p_1{margin-left :140px !important;
+   margin-top : 130px!important;
+   } 
+    
+        
+   
+.contents .p_2{margin-left :140px!important;} 
+
+
+.contents .p_3 {margin-top :130px!important;}
+
+
+
+.bx-wrapper .bx-prev {
+left : 4%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+
+.bx-wrapper .bx-next {
+right: 13%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+.storage_place .bana  {width: 775px;
+  height: 20px;
+  padding:20px;
+  font-size: 1em;
+  
+  }
+
+      
+
+.bana input {width: 60px; height : 26px; 
+  padding:2px;
+  font-weight: bolder;
+  margin:2px;
+  background-color: #B2EBF4;
+  }
+    
+    
+.price_bt { width : 10%;
+    height : 150px;
+    display : flex;
+    flex-direction : column;
+    margin : 73px 0px;
+    margin-left : 20px;
+   }  
+    
+}
+/*============================================================= 1339px  ===============================================================================*/
+
+@media screen and (max-width : 1339px) {
+
+
+#main_page >  .header_img {width : 100%;
+  height: 190px;
+  position : relative;
+  overflow : hidden;
+  }
+
+
+
+#main_page > .header_img > img  {width :100%; 
+  height: 190px;
+  position : absolute;
+  }
+
+
+    
+.bxslider  .contents .product {width: 175px!important;
+  height : 176px!important;
+  margin: 20px 20px;
+  box-sizing : border-box;
+  }
+
+
+  
+.contents > .product  img {width : 100%;
+  height : 134px;
+  }
+  
+
+
+.contents > .product  .product_letter {width : 100%;
+  height : 36px; 
+  background-color : #00c0a7;;
+  text-align : center;
+  font-size : 1em;
+  color : white;
+  text-align : center;
+  padding-top : 10px;
+  }
+  
+
+.contents .p_1{margin-left :100px !important;} 
+
+
+.contents .p_2{margin-left :100px !important;} 
+
+
+.bx-wrapper .bx-prev {
+left : 2%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+.bx-wrapper .bx-next {
+right: 12%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+}
+
+
+#main_page #price_cal  {
+          width : 100%;
+          height : 286px;
+          background : rgba(189,189,189,0.4);
+          display : flex;
+          flex-direction: row;
+          flex-wrap : wrap;
+          }
+
+#price_cal li {list-style-type : none;}            
+
+
+
+
+#price_cal > .result_price {
+              width : 70%;
+              height : 180px;
+              display : flex;
+              flex-direction : row;
+              flex-wrap : wrap;
+              margin : 40px 0px;
+              margin-left : 40px;
+             }
+
+             
+                                
+#price_cal   .storage_place {width : 70%;
+  height : 180px;
+  background-color :  #00c0a7;
+  }
+
+
+                              
+.storage_place .bana  {width: 650px;
+  height: 50px;
+  padding:10px;
+  font-size: 1.1em;
+  }
+            
+            
+.bana input {width: 37px; height : 25px; 
+  font-size : 0.6em;
+  text-align : left;
+  font-weight: bolder;
+  margin-left:10px;
+  background-color: #B2EBF4;
+  }
+
+
+#price_cal  .price_result_img {
+                width : 29%;
+                height : 180px;
+                position : relative;
+                }
+
+
+#price_cal .price_result_img > img { 
+                       width:100%; 
+                       height:180px;
+                      }
+
+
+
+#price_cal .price_result_img > .checkbt input {position : absolute;
+  top: -11px;
+  right : 0px;
+  width : 30px;
+  height: 50px;
+  }
+
+
+.price_bt {width : 10%;
+  height : 150px;
+  display : flex;
+  flex-direction : column;
+  margin : 70px 0px;
+  margin-left : 30px;
+  }
+
+
+                        
+  #price_cal > .price_bt  button {width : 100%;
+    height : 70px;
+    background-color :  #00c0a7;
+    font-size: 1.7em;
+    color: white;
+    margin:5px 0px;
+    }                                   
+
+                      
+}
+
+/*============================================================= 1264px  ===============================================================================*/
+@media screen and (max-width : 1264px) {
+
+
+  #main_page >  .header_img {width : 100%;
+    height: 150px;
+    position : relative;
+    overflow : hidden;
+    }
+
+#main_page > .header_img > img {width :100%; 
+              height: 150px;
+              position : absolute;
+              }
+
+
+.product_tb {display :block!important;}
+
+.product {display :none!important;}
+
+
+.contents5 {width : 100%;
+  height : 600px;
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow : hidden;
+  }
+
+
+  .contents  .product_tb {width: 290px!important;
+    height : 230px!important;
+    margin: 30px 20px;
+    box-sizing : border-box;
+    }
+
+
+.contents5  .product_tb {width: 290px!important;
+  height : 230px!important;
+  margin: 30px 20px;
+  box-sizing : border-box;
+  }
+
+
+.contents5 input {display : none;}
+   
+.contents .tb_1 {margin-left: 190px;
+                     margin-top: 70px;}
+
+.contents .tb_2 {margin-left: 190px;}
+
+.contents5 .tb_1 {margin-left: 190px;
+     margin-top: 70px;}
+
+.contents5 .tb_2 {margin-left: 190px;}
+
+
+.contents .tb_3 {margin-top: 70px;}
+
+.contents5 .tb_3 {margin-top: 70px;}
+
+.product_tb > label >  img {
+      width : 100%;
+      height : 174px;
+      }
+   
+      
+.product_tb  .product_letter_tb {
+                width : 100%;
+                height : 50px; 
+                background-color : #00c0a7;;
+                text-align : center;
+                font-size : 1.2em;
+                color : white;
+                text-align : center;
+                padding-top : 10px;
+               }
+
+  /* bxslider 하단 버튼 */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto 
+{bottom: 10px;
+  width: 100%;
+  height : 90px;
+  margin-left: -30px;
+  display :block;
+}
+
+
+.contents .product_tb:hover{
+            border:3px solid #00c0a7;
+              } 
+
+
+
+.bx-wrapper .bx-prev {
+left : 7%!important;
+top:50%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+}
+
+.bx-wrapper .bx-next {
+right: 16%!important;
+top:50%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+}
+
+
+
+
+#main_page #price_cal  {
+  width : 100%;
+  height : 320px;
+  background : rgba(189,189,189,0.4);
+  display : flex;
+  flex-direction: row;
+  flex-wrap : wrap;
+  }
+
+#price_cal li {list-style-type : none;}            
+
+
+#price_cal > .result_price {width : 70%;
+  height : 180px;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  margin : 60px 0px;
+  margin-left : 40px;
+  }
+
+
+
+
+#price_cal   .storage_place {width : 70%;
+  height : 180px;
+  background-color :  #00c0a7;
+  }
+
+
+
+.storage_place .bana  {width: 650px;
+  height: 50px;
+  padding:10px;
+  font-size: 1em;}
+    
+    
+.bana input {width: 37px; height : 25px; 
+  font-size : 0.6em;
+  text-align : left;
+  font-weight: bolder;
+  margin-left:10px;
+  background-color: #B2EBF4;
+  }
+
+
+.price_bt {width : 10%;
+height : 150px;
+display : flex;
+flex-direction : column;
+margin : 90px 0px;
+margin-left : 30px;
+}
+
+#price_cal > .price_bt  button {
+          width : 100%;
+          height : 70px;
+          background-color :  #00c0a7;
+          font-size: 1.7em;
+          color: white;
+          margin:5px 0px;
+          }                                   
+
+
+
+#price_cal .price_result_img > .checkbt input {
+                        position : absolute;
+                        top: -11px;
+                        right : 0px;
+                        width : 30px;
+                        height: 50px;
+                        }
+
+                      
+
+#price_cal  .price_result_img {
+        width : 29%;
+        height : 180px;
+        position : relative;
+        }
+
+
+#price_cal .price_result_img > img { 
+               width:100%; 
+               height:180px;
+              }
+  
+}
+/*============================================================= 1200px  ===============================================================================*/
+
+@media screen and (max-width : 1200px) {
+ 
+  #main_page {width : 100%;}
+
+  header .menu.menu-slide {
+    transform: translateX(0px);
+    background-color: var(--color-mint);
+    z-index: 9999;
+  }
+
+
+  header .toggle-button {
+    width: 30px;
+    height: 24.5px;
+    position: relative;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 99999;
+  }
+
+ #main_page >  .header_img {width : 100%;
+  height: 200px;
+  position : relative;
+  overflow : hidden;
+  }
+
+
+#main_page > .header_img > img{width :100%; 
+  height: 200px;
+  position : absolute;
+  margin-left : -533px;
+  }
+
+  .contents5 {width : 100%;
+    height : 600px;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow : hidden;
+    }
+  
+.contents  .product_tb {width: 280px!important;
+    height : 230px!important;
+    margin: 30px 20px;
+    box-sizing : border-box;
+    }
+  
+.contents5  .product_tb {width: 280px!important;
+    height : 230px!important;
+    margin: 30px 20px;
+    box-sizing : border-box;
+    }
+  
+.product_tb > label > img {width : 100%;
+      height : 174px;
+      }
+
+.product_tb {display :block!important;}
+
+.product {display :none!important;}
+      
+  .product_tb  .product_letter_tb {
+                width : 100%;
+                height : 50px; 
+                background-color : #00c0a7;;
+                text-align : center;
+                font-size : 1.2em;
+                color : white;
+                text-align : center;
+                padding-top : 10px;
+               }
+  
+  
+  
+  .contents5 input {display : none;}
+     
+  .contents .tb_1 {margin-left: 300px;
+                       margin-top: 50px;}
+  
+  .contents .tb_2 {margin-left: 300px;}
+  
+  .contents5 .tb_1 {margin-left: 300px;
+    margin-top: 50px;}
+  
+  .contents5 .tb_2 {margin-left: 300px;}
+  
+  .contents .tb_3 {margin-top: 50px;}
+  
+  .contents5 .tb_3 {margin-top: 50px;}
+  
+
+  /* bxslider 하단 버튼 */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto 
+{bottom: 10px;
+  width: 100%;
+  height : 90px;
+  margin-left: 20px;
+  display :block;
+}
+
+
+
+ 
+
+
+.bx-wrapper .bx-prev {
+left : 7%!important;
+top:50%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+
+}
+
+.bx-wrapper .bx-next {
+right: 7%!important;
+top:50%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+
+}
+
+
+#main_page #price_cal  {
+  width : 100%;
+  height : 320px;
+  background : rgba(189,189,189,0.4);
+  display : flex;
+  flex-direction: row;
+  flex-wrap : wrap;
+  }
+
+#price_cal li {list-style-type : none;}            
+
+
+                                  
+
+
+#price_cal > .result_price {width : 70%;
+  height : 180px;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  margin : 60px 0px;
+  margin-left : 100px;
+  }
+
+
+#price_cal   .storage_place {width : 70%;
+  height : 180px;
+  background-color :  #00c0a7;
+  }
+
+
+.storage_place .bana  {width: 650px;
+  height: 50px;
+  padding:10px;
+  font-size: 1.2em;
+  }
+          
+  
+.bana input {width: 37px; height : 25px; 
+  font-size : 0.6em;
+  text-align : left;
+  font-weight: bolder;
+  margin-left:10px;
+  background-color: #B2EBF4;
+  }
+
+ 
+#price_cal  .price_result_img {width : 29%;
+  height : 180px;
+  position : relative;
+  }
+
+
+#price_cal .price_result_img > img {width:100%; 
+  height:180px;
+  }
+
+
+#price_cal .price_result_img > .checkbt input {position : absolute;
+  top: -11px;
+  right : 0px;
+  width : 30px;
+  height: 50px;
+  }
+
+
+  .price_bt {width : 10%;
+    height : 150px;
+    display : flex;
+    flex-direction : column;
+    margin : 90px 0px;
+    margin-left : 20px;
+    }
+
+                          
+#price_cal > .price_bt  button {width : 100%;
+  height : 70px;
+  background-color :  #00c0a7;
+  font-size: 1.7em;
+  color: white;
+  margin:5px 0px;
+  }                        
+                            
+footer {width : 97.2%;}
+
+
+}
+/* ===========================================1060px============================================================================= */
+@media screen and (max-width : 1060px) {
+
+#main_page {width : 100%;}
+
+
+
+ #main_page >  .header_img {width : 100%;
+  height: 150px;
+  position : relative;
+  overflow : hidden;
+  }
+
+
+
+#main_page > .header_img > img {width :100%; 
+  height: 150px;
+  position : absolute;
+  margin-left : -580px;
+  }
+
+.product_tb {display :block!important;}
+  
+.product {display :none!important;}
+
+
+.contents5 {width : 100%;
+  height : 600px;
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow : hidden;
+  }
+
+
+
+.contents  .product_tb {width: 280px!important;
+  height : 230px!important;
+  margin: 30px 20px;
+  box-sizing : border-box;
+  }
+
+
+.contents5  .product_tb {width: 280px!important;
+  height : 230px!important;
+  margin: 30px 20px;
+  box-sizing : border-box;
+  }
+
+.contents5 input {display : none;}
+ 
+
+.contents .tb_1 {margin-left: 220px;
+                   margin-top: 50px;}
+
+
+.contents .tb_2 {margin-left: 220px;}
+
+
+.contents5 .tb_1 {margin-left: 220px;
+    margin-top: 50px;}
+
+
+.contents5 .tb_2 {margin-left: 220px;}
+
+
+.contents .tb_3 {margin-top: 50px;}
+
+
+.contents5 .tb_3 {margin-top: 50px;}
+
+
+.product_tb > label >  img {width : 100%;
+  height : 174px;
+  }
+    
+.product_tb  .product_letter_tb {width : 100%;
+  height : 50px; 
+  background-color : #00c0a7;;
+  text-align : center;
+  font-size : 1.2em;
+  color : white;
+  text-align : center;
+  padding-top : 10px;
+  }
+
+
+
+
+  /* bxslider 하단 버튼 */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto 
+{bottom: 10px;
+  width: 100%;
+  height : 90px;
+  margin-left: -10px;
+  display :block;
+}
+    
+.bx-wrapper .bx-prev {left : 7%!important;
+top:50%!important;
+background: url('./images/left_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+}
+
+.bx-wrapper .bx-next {right: 7%!important;
+top:50%!important;
+background: url('./images/right_btn.png') no-repeat center;
+background-size : 90%!important;
+display :block;
+}
+
+
+#main_page #price_cal {width : 100%;
+  height : 320px;
+  background : rgba(189,189,189,0.4);
+  display : flex;
+  flex-direction: row;
+  flex-wrap : wrap;
+  }
+
+#price_cal li {list-style-type : none;}            
+
+
+                                   
+
+#price_cal > .result_price {width : 70%;
+  height : 180px;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  margin : 60px 0px;
+  margin-left : 100px;
+  }
+
+
+ 
+
+
+#price_cal .storage_place {width : 70%;
+  height : 180px;
+  background-color :  #00c0a7;
+  }
+
+
+.storage_place .bana  {width: 650px;
+  height: 50px;
+  padding:10px;
+  font-size: 0.9em;
+  }    
+       
+    
+.bana input {width: 37px; height : 25px; 
+  font-size : 0.6em;
+  text-align : left;
+  font-weight: bolder;
+  margin-left:10px;
+  background-color: #B2EBF4;
+  }
+                      
+
+#price_cal  .price_result_img {width : 29%;
+  height : 180px;
+  position : relative;
+  }
+
+
+#price_cal .price_result_img > img {width:100%; 
+  height:180px;
+  }
+  
+
+  #price_cal .price_result_img > .checkbt input {position : absolute;
+    top: -11px;
+    right : 0px;
+    width : 30px;
+    height: 50px;
+    }
+  
+  
+  .price_bt {width : 10%;
+      height : 150px;
+      display : flex;
+      flex-direction : column;
+      margin : 90px 0px;
+      margin-left : 20px;
+      }
+      
+      
+  #price_cal > .price_bt  button {width : 100%;
+        height : 70px;
+        background-color :  #00c0a7;
+        font-size: 1.7em;
+        color: white;
+        margin:5px 0px;
+        }  
+  
+  
+footer {width : 97.2%;}
+ 
+
+}
+

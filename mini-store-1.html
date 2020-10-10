@@ -1,0 +1,1917 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>단지가 궁금해 스토어</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<meta name="description" content="단지가 궁금해 스토어">
+	<meta name="author" content="단지가 궁금해 스토어">
+	<link rel="icon" type="image/png" href="./image/pavicon.png">
+    <link rel="stylesheet" href="./css/mini_store.css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./bxslider_1/jquery.bx_1slider.css">
+	<script src="./jquery/jquery-3.5.1.js"></script>
+	<script src="./bxslider_1/jquery.bx_1slider.min.js"></script>
+	<script src="https://kit.fontawesome.com/dc4c876557.js" crossorigin="anonymous"></script>
+<script>
+	function check() {
+			document.querySelector(".put").checked = true;
+		}
+
+		function uncheck() {
+			document.querySelector(".put").checked = false;
+		}
+
+
+     $(function () {
+		$(".header_img > img").not(":first").css("display", "none");
+     hide();
+			
+	 function hide() {
+		$(".header_img > img").eq(0).delay(4000).animate({ "right": "100%" }, 1000);
+		$(".header_img > img").eq(1).delay(4000).css("display", "block").
+			css("right", "-100%").animate({ "right": "0px" }, 1000,
+
+	function () {
+		$(".header_img > img").eq(1).delay(4000).animate({ "right": "100%" }, 1000);
+		$(".header_img > img").eq(2).delay(4000).css("display", "block").
+			css("right", "-100%").animate({ "right": "0px" }, 1000,
+
+					function () {
+						$(".header_img > img").eq(2).delay(4000).animate({ "right": "100%" }, 1000);
+						$(".header_img > img").eq(3).delay(4000).css("display", "block").
+							css("right", "-100%").animate({ "right": "0px" }, 1000,
+
+								function () {
+									$(".header_img > img").eq(3).delay(4000).animate({ "right": "100%" }, 1000);
+									$(".header_img > img").eq(0).delay(4000).css("display", "block").
+										css("right", "-100%").animate({ "right": "0px" }, 1000, hide);
+								});
+					});
+		});
+	}
+});
+</script>
+</head>
+<body>
+	<header>
+		<div class="toggle-button">
+			<div class="toggle icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="mainmove-btn">
+			<!--<i class="fas fa-home"></i>-->
+			<a href="index.php">
+				<img src="./image/subpage_icon_main.png" alt="메인으로이동"><span>Home</span>
+			</a>
+		</div>
+		<nav class="menu">
+                <div class="logo">
+                    <img src="./image/home_logo.png" alt="로고" width="120">
+                </div>
+                <div class="menu__login">
+                    <ul>
+						
+					</ul>
+                </div>
+                <div class="menu__category">
+                    <ul>
+						<li class="main">제품 소개<span></span><span></span></li>
+                        <li class="sub"><span></span><a href="product1.php">단지가 궁금해</a></li>
+                        <li class="sub"><span></span><a href="product2.php">성분이 궁금해</a></li>
+                        <li class="sub"><span></span><a href="product3.php">효능이 궁금해</a></li>
+                        <li class="main">이벤트<span></span><span></span></li>
+                        <li class="sub"><span></span><a href="event_board.php">우리랑 사진 찍자!</a></li>
+                        <li class="sub"><span></span><a href="roulette.php">꽝없는 룰렛을 돌려라!</a></li>
+                        <li class="main">스토어<span></span><span></span></li>
+                        <li class="sub"><span></span><a href="mini-store-1.html">제품 구매</a></li>
+                        <li class="main">게시판<span></span><span></span></li>
+                        <li class="sub"><span></span><a href="board_list.php">자유게시판</a></li>
+                    </ul>
+                </div>
+                <div class="menu__footer">
+                    <p> ⓒ 2020.단지가 궁금해 온라인 스토어<br> all rights reserved.</p>
+                </div>
+            </nav>
+			<script>
+					$(function() {
+                        $(".mainmove-btn span").hover(function() {
+                            $(this).text("홈으로");
+                        },function() {
+                            $(this).text("Home");
+                        });
+                    });
+			</script>
+            <script src="./js/nav.js"></script>
+	</header>
+	<div id="container">
+		<div id="main_page">
+			<div class="top-line"></div>
+			<div class="header_img">
+				<img src="image/store_banner1.png">
+				<img src="image/store_banner2.png">
+				<img src="image/store_banner1.png">
+				<img src="image/store_banner2.png">
+			</div>
+			  <div class="bxslider">
+<!-- =========================================================================== bxslider 1page tablet ===============================================  -->
+				  <div class="contents content_1">
+					  <div class="product_tb tb_1 "  onclick="product_lt_3();">
+						 <label>
+							<img src="image/banana_light_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_light_3.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3"  onclick="product_lt_4();">
+						<label>
+							<img src="image/banana_light_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_light_4.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2"  onclick="product_lt_8();">
+						<label>
+							<img src="image/banana_light_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_light_8.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb"  onclick="product_lt_12();">
+						<label>
+							<img src="image/banana_light_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_light_12.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 12</span>
+							</div>
+						</label>
+					</div>
+<!-- ======================================================================================== bxslider 1page tablet ===============================================  -->
+<!-- ============================================================================ bxslider 1page main ===============================================  -->
+				    <div class="product p_1" onclick="product_lt_3();">
+						<label>
+							<img src="image/banana_light_3.png">
+							<div class="product_letter">
+								<input type="button" namd="pic" value="image/banana_light_3.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 3</span>
+							</div>
+						</label>
+					</div>
+				      <div class="product p_3" onclick="product_lt_4();">
+						<label>
+							<img src="image/banana_light_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_light_4.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 4</span>
+							</div>
+						</label>
+					</div>
+					  <div class="product p_3" onclick="product_lt_8();">
+						<label>
+							<img src="image/banana_light_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_light_8.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_lt_12();">
+						<label>
+							<img src="image/banana_light_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_light_12.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 lite x 12</span>
+						</div>
+						</label>
+					</div>
+					<div class="product p_2" onclick="product_org_3();">
+						<label>
+							<img src="image/banana_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_3.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_org_4();">
+						<label>
+							<img src="image/banana_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_4.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product"  onclick="product_org_8();">
+						<label>
+							<img src="image/banana_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana_8.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product"  onclick="product_org_12();">
+						<label>
+							<img src="image/banana12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/banana12.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+				</div>
+<!-- ============================================================== bxslider 1page main ===============================================  -->
+
+				<div class="contents content_2">
+<!-- ================================================= bxslider 2page tablet ===============================================  -->
+					<div class="product_tb tb_1 "  onclick="product_org_3();">
+						<label>
+							<img src="image/banana_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_3.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb  tb_3"  onclick="product_org_4();">
+						<label>
+							<img src="image/banana_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_4.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2"  onclick="product_org_8();">
+						<label>
+							<img src="image/banana_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana_8.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb"  onclick="product_org_12();">
+						<label>
+							<img src="image/banana12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/banana12.png"
+								onclick="view_change(this.value);" checked> <span> 바나나우유 x 12</span>
+							</div>
+						</label>
+					</div>
+<!-- ===================================================== bxslider 2page  tablet ===============================================  -->
+<!--=========================================== bxslider 2page main ===============================================  -->
+					<div class="product p_1" onclick="product_sw_3();">
+						<label>
+							<img src="image/sweet_potato_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/sweet_potato_3.png"
+								onclick="view_change(this.value);" checked> <span> 호박고구마맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_sw_4();">
+						<label>
+							<img src="image/sweet_potato_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/sweet_potato_4.png"
+								onclick="view_change(this.value);" checked> <span> 호박고구마맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_sw_8();">
+						<label>
+							<img src="image/sweet_potato_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/sweet_potato_8.png"
+								onclick="view_change(this.value);" checked> <span> 호박고구마맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_sw_12();">
+						<label>
+							<img src="image/sweet_potato_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/sweet_potato_12.png"
+								onclick="view_change(this.value);" checked> <span> 호박고구마맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_2"  onclick="product_od_3();">
+						<label>
+							<img src="image/oddy_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/oddy_3.png"
+								onclick="view_change(this.value);" checked> <span> 오디맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product"  onclick="product_od_4();">
+						<label>
+							<img src="image/oddy_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/oddy_4.png"
+								onclick="view_change(this.value);" checked> <span> 오디맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product"  onclick="product_od_8();">
+						<label>
+							<img src="image/oddy_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/oddy_8.png"
+								onclick="view_change(this.value);" checked> <span> 오디맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product"  onclick="product_od_12();">
+						<label>
+							<img src="image/oddy_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/oddy_12.png"
+								onclick="view_change(this.value);" checked> <span> 오디맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+				</div>
+<!-- ============================================================================= bxslider 2page main ===============================================  -->
+				<div class="contents content_3">
+<!-- ================================================ bxslider 3page tablet ===============================================  -->
+					<div class="product_tb tb_1 "  onclick="product_sw_3();">
+						<label>
+							<img src="image/sweet_potato_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/sweet_potato_3.png"
+								onclick="view_change(this.value);" checked> <span> 호박고구마맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3"  onclick="product_sw_4();">
+						<label>
+							<img src="image/sweet_potato_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/sweet_potato_4.png"
+								onclick="view_change(this.value);" checked> <span>호박고구마맛 우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2"  onclick="product_sw_8();">
+						<label>
+							<img src="image/sweet_potato_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/sweet_potato_8.png"
+								onclick="view_change(this.value);" checked> <span>호박고구마맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb"  onclick="product_sw_12();">
+						<label>
+							<img src="image/sweet_potato_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/sweet_potato_12.png"
+								onclick="view_change(this.value);" checked> <span>  호박고구마맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>
+<!-- ================================== bxslider 3page tablet ===============================================  -->
+<!-- ====================== bxslider 3page main ===============================================  -->
+					<div class="product p_1" onclick="product_va_3();">
+						<label>
+							<img src="image/vanila_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/vanila_3.png"
+								onclick="view_change(this.value);" checked> <span> 바닐라맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3"  onclick="product_va_4();">
+						<label>
+							<img src="image/vanila_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/vanila_4.png"
+								onclick="view_change(this.value);" checked> <span> 바닐라맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3"  onclick="product_va_8();">
+						<label>
+							<img src="image/vanila_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/vanila_8.png"
+								onclick="view_change(this.value);" checked> <span> 바닐라맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3"  onclick="product_va_12();">
+						<label>
+							<img src="image/vanila_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/vanila_12.png"
+								onclick="view_change(this.value);" checked> <span> 바닐라맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_2" onclick="product_ta_3();">
+						<label>
+							<img src="image/tanger_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/tanger_3.png"
+								onclick="view_change(this.value);" checked> <span> 귤맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_ta_4();">
+						<label>
+							<img src="image/tanger_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/tanger_4.png"
+								onclick="view_change(this.value);" checked> <span> 귤맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_ta_8();">
+						<label>
+							<img src="image/tanger_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/tanger_8.png"
+								onclick="view_change(this.value);" checked> <span> 귤맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_ta_12();">
+						<label>
+							<img src="image/tanger_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/tanger_12.png"
+								onclick="view_change(this.value);" checked> <span> 귤맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+<!-- =============================== bxslider 3page main ===============================================  -->
+				</div>
+<!-- ================= bxslider 4page tablet ===============================================  -->
+				<div class="contents content_4">
+					<div class="product_tb tb_1 "  onclick="product_od_3();">
+						<label>
+							<img src="image/oddy_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/oddy_3.png"
+								onclick="view_change(this.value);" checked> <span>오디맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3"  onclick="product_od_4();">
+						<label>
+							<img src="image/oddy_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/oddy_4.png"
+								onclick="view_change(this.value);" checked> <span>오디맛우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2"  onclick="product_od_8();">
+						<label>
+							<img src="image/oddy_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/oddy_8.png"
+								onclick="view_change(this.value);" checked> <span>오디맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb">
+						<label>
+							<img src="image/oddy_12.png"  onclick="product_od_12();">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/oddy_12.png"
+								onclick="view_change(this.value);" checked> <span>오디맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>
+<!-- ============================= bxslider 4page tablet ===============================================  -->
+
+<!-- ==================== bxslider 4page main ===============================================  -->
+					<div class="product p_1" onclick="product_lc_3();">
+						<label>
+							<img src="image/Lychee_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/Lychee_3.png"
+								onclick="view_change(this.value);" checked> <span> 리치피치맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_lc_4();">
+						<label>
+							<img src="image/Lychee_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/Lychee_4.png"
+								onclick="view_change(this.value);" checked> <span> 리치피치맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_lc_8();">
+						<label>
+							<img src="image/Lychee_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/Lychee_8.png"
+								onclick="view_change(this.value);" checked> <span> 리치피치맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_3" onclick="product_lc_12();">
+						<label>
+							<img src="image/Lychee_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/Lychee_12.png"
+								onclick="view_change(this.value);" checked> <span> 리치피치맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product p_2" onclick="product_can_3();">
+						<label>
+							<img src="image/candy_3.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/candy_3.png"
+								onclick="view_change(this.value);" checked> <span> 캔디바맛 우유 x 3 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_can_4();">
+						<label>
+							<img src="image/candy_4.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/candy_4.png"
+								onclick="view_change(this.value);" checked> <span> 캔디바맛 우유 x 4 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_can_8();">
+						<label>
+							<img src="image/candy_8.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/candy_8.png"
+								onclick="view_change(this.value);" checked> <span> 캔디바맛 우유 x 8 </span>
+							</div>
+						</label>
+					</div>
+					<div class="product" onclick="product_can_12();">
+						<label>
+							<img src="image/candy_12.png">
+							<div class="product_letter">
+								<input type="radio" namd="pic" value="image/candy_12.png"
+								onclick="view_change(this.value);" checked> <span> 캔디바맛 우유 x 12 </span>
+							</div>
+						</label>
+					</div>
+<!-- =========================================== bxslider 4page main ===============================================  -->
+				</div>
+<!-- ============================== bxslider 5page tablet ===============================================  -->
+ 				<div class="contents5">
+					<div class="product_tb tb_1 " onclick="product_va_3();">
+						<label>
+							<img src="image/vanila_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/vanila_3.png"
+								onclick="view_change(this.value);" checked> <span>바닐라맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3" onclick="product_va_4();">
+						<label>
+							<img src="image/vanila_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/vanila_4.png"
+								onclick="view_change(this.value);" checked> <span>바닐라맛 우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2" onclick="product_va_8();">
+						<label>
+							<img src="image/vanila_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/vanila_8.png"
+								onclick="view_change(this.value);" checked> <span>바닐라맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb" onclick="product_va_12();">
+						<label>
+							<img src="image/vanila_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/vanila_12.png"
+								onclick="view_change(this.value);" checked> <span>바닐라맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>
+<!-- ========================================= bxslider 5page tablet ===============================================  -->
+				</div>
+<!-- ================== bxslider 6page tablet ===============================================  -->
+				<div class="contents5">
+					<div class="product_tb tb_1 " onclick="product_ta_3();">
+						<label>
+							<img src="image/tanger_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/tanger_3.png"
+								onclick="view_change(this.value);" checked> <span>귤맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3" onclick="product_ta_4();">
+						<label>
+							<img src="image/tanger_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/tanger_4.png"
+								onclick="view_change(this.value);" checked> <span>귤맛 우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2" onclick="product_ta_8();">
+						<label>
+							<img src="image/tanger_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/tanger_8.png"
+								onclick="view_change(this.value);" checked> <span>귤맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb" onclick="product_ta_12();">
+						<label>
+							<img src="image/tanger_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/tanger_12.png"
+								onclick="view_change(this.value);" checked> <span>귤맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>	
+				</div>
+<!-- ======================= bxslider 6page tablet ===============================================  -->
+
+<!-- ========= bxslider 7page tablet ===============================================  -->
+				<div class="contents5">
+					<div class="product_tb tb_1 " onclick="product_lc_3();">
+						<label>
+							<img src="image/Lychee_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/Lychee_3.png"
+								onclick="view_change(this.value);" checked> <span>리치피치맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3" onclick="product_lc_4();">
+						<label>
+							<img src="image/Lychee_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/Lychee_4.png"
+								onclick="view_change(this.value);" checked> <span>리치피치맛 우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2" onclick="product_lc_8();">
+						<label>
+							<img src="image/Lychee_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/Lychee_8.png"
+								onclick="view_change(this.value);" checked> <span>리치피치맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb" onclick="product_lc_12();">
+						<label>
+							<img src="image/Lychee_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/Lychee_12.png"
+								onclick="view_change(this.value);" checked> <span>리치피치맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>	
+				</div>
+<!-- ================================= bxslider 7page tablet ===============================================  -->
+
+<!-- ================== bxslider 8page tablet ===============================================  -->
+				<div class="contents5">
+					<div class="product_tb tb_1 " onclick="product_can_3();">
+						<label>
+							<img src="image/candy_3.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/candy_3.png"
+								onclick="view_change(this.value);" checked> <span>캔디바맛 우유 x 3</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_3" onclick="product_can_4();">
+						<label>
+							<img src="image/candy_4.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/candy_4.png"
+								onclick="view_change(this.value);" checked> <span>캔디바맛 우유 x 4</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb tb_2" onclick="product_can_8();">
+						<label>
+							<img src="image/candy_8.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/candy_8.png"
+								onclick="view_change(this.value);" checked> <span>캔디바맛 우유 x 8</span>
+							</div>
+						</label>
+					</div>
+					<div class="product_tb" onclick="product_can_12();">
+						<label>
+							<img src="image/candy_12.png">
+							<div class="product_letter_tb">
+								<input type="button" namd="pic" value="image/candy_12.png"
+								onclick="view_change(this.value);" checked> <span>캔디바맛 우유 x 12</span>
+							</div>
+						</label>
+					</div>	
+				</div>
+<!-- ================================================= bxslider 8page tablet =====================================================-->
+			</div>
+			
+<!-- =================================== bxslider outer box ===============================================================================================================================================================-->
+			<div id="price_cal">
+				<div class="result_price">
+				    <div class="storage_place">
+						 <div id="box_1">
+							<form action="">
+							<table class="bana">
+								<tr>
+									<td>바나나우유 lite x 3 =3000&#8361;
+									&nbsp;갯수<input id="bana_lt_3" type="text" size="2" value="0"
+									 onclick="this.select();"/>
+									<input id="bana_lt_3_total" type="text" size="7" value="0"/>원
+									<input type="button" value="구매" onclick="bana_lt_To()"/><input type="reset" value="취소"></td>
+							     </tr>
+							</table>
+						</form>
+						 </div>
+						 <div id="box_2">
+							<form action="">
+								<table class="bana">
+									<tr>
+									   <td>바나나우유 lite x 4 =4500&#8361;
+										&nbsp;갯수<input id="bana_lt_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lt_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lt_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						 </div>
+						 <div id="box_3">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유 lite x 8 =9200&#8361;
+										&nbsp;갯수<input id="bana_lt_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lt_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lt_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						 </div>
+						 <div id="box_4">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유lite x 12 =11000&#8361;
+										갯수<input id="bana_lt_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lt_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lt_To_12()"/><input type="reset" value="취소"></td>	
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_5">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x3=3000&#8361;
+										&nbsp;갯수<input id="bana_og_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_og_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_og_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_6">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x4=4500&#8361;
+										&nbsp;갯수<input id="bana_og_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_og_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_og_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_7">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x8=4500&#8361;
+										&nbsp;갯수<input id="bana_og_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_og_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_og_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_8">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>바나나우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x12=11000&#8361;
+										&nbsp;갯수<input id="bana_og_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_og_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_og_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_9">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>호박고구마맛 우유x3=3000&#8361;
+										갯수<input id="bana_sw_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_sw_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_sw_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_10">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>호박고구마맛 우유x4=4500&#8361;
+										갯수<input id="bana_sw_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_sw_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_sw_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_11">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>호박고구마맛 우유x8=9200&#8361;
+										갯수<input id="bana_sw_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_sw_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_sw_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_12">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>호박고구마맛 우유x12=11000&#8361;
+										갯수<input id="bana_sw_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_sw_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_sw_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_13">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>오디맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x3=3000&#8361;
+										갯수<input id="bana_od_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_od_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_od_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_14">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>오디맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x4=4500&#8361;
+										갯수<input id="bana_od_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_od_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_od_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_15">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>오디맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx8=9200&#8361;
+										갯수<input id="bana_od_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_od_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_od_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_16">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>오디맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx12=11000&#8361;
+										갯수<input id="bana_od_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_od_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_od_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_17">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;바닐라맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx3=3000&#8361;
+										갯수<input id="bana_va_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_va_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_va_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_18">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;바닐라맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx4=4500&#8361;
+										갯수<input id="bana_va_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_va_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_va_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_19">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;바닐라맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx8=9200&#8361;
+										갯수<input id="bana_va_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_va_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_va_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_20">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;바닐라맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbspx12=11000&#8361;
+										갯수<input id="bana_va_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_va_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_va_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_21">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;귤맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx3=3000&#8361;
+										갯수<input id="bana_ta_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_ta_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_ta_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_22">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;귤맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspx4=4500&#8361;
+										갯수<input id="bana_ta_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_ta_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_ta_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_23">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;귤맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x8=9200&#8361;
+										갯수<input id="bana_ta_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_ta_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_ta_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_24">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;귤맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x12=11000&#8361;
+										갯수<input id="bana_ta_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_ta_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_ta_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_25">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;리치피치맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x3=3000&#8361;
+										갯수<input id="bana_lc_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lc_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lc_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_26">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;리치피치맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x4=4500&#8361;
+										갯수<input id="bana_lc_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lc_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lc_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_27">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;리치피치맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x8=9200&#8361;
+										갯수<input id="bana_lc_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lc_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lc_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_28">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;리치피치맛 우유&nbsp;&nbsp;&nbsp;x12=11000&#8361;
+										갯수<input id="bana_lc_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_lc_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_lc_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_29">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;캔디바맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x3=3000&#8361;
+										갯수<input id="bana_can_3" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_can_3_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_can_To_3()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_30">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;캔디바맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x4=4500&#8361;
+										갯수<input id="bana_can_4" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_can_4_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_can_To_4()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_31">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;캔디바맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x8=9200&#8361;
+										갯수<input id="bana_can_8" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_can_8_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_can_To_8()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<div id="box_32">
+							<form action="">
+								<table class="bana">
+									<tr>
+										<td>&nbsp;캔디바맛 우유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x12=11000&#8361;
+										갯수<input id="bana_can_12" type="text" size="2" value="0"
+										 onclick="this.select();"/>
+										<input id="bana_can_12_total" type="text" size="5" value="0"/>원
+										<input type="button" value="구매" onclick="bana_can_To_12()"/><input type="reset" value="취소"></td>
+									</tr>
+								</table>
+							</form>
+						</div>																												
+					</div>
+					<div class="price_result_img">
+						<li class="checkbt">
+							<input type="checkbox" name="check" class="put out">
+						</li>
+						<img src="image/get_bana_1.png" alt="product_pic" id="mlik">
+					</div>
+				</div>
+				<div class="price_bt">
+					<button onclick="check();">담기</button>
+					<button onclick="uncheck();">취소</button>
+				</div>
+			</div>
+		</div>
+<!-- ======================================================== footer ===============================================  -->
+		<footer>
+			<div>
+				<div class="site logo">
+					<a href="blnggrae_index.html">
+						<img src="image/home_logo.png" alt="빙그레 로고" width="150">
+					</a>
+					<p>ⓒ 재현없는재현조 all rights reserved.</p>
+				</div>
+				<div class="site info">
+					<p>
+						<span class="bold">상호</span> 단지가 궁금해 온라인 스토어<br>
+						<span class="bold">대표</span> 재현없는재현조<br>
+						<span class="bold">주소</span> 서울시 행복구 행복동 행복길 12<br>
+						<span class="bold">전화</span> 02-123-4567<br>
+						<span class="bold">메일</span> abc123@defg.com<br>
+						<span class="strong">※오전 9시부터 6시까지 상담 시간입니다.</span>
+					</p>
+					<p>
+						<span class="bold">무통장 입금 계좌번호</span><br>
+						<span class="bold">예금주</span> 단지가 궁금해 온라인 스토어<br>
+						<span class="bold">국민</span> 123456 - 01 - 789101<br>
+						<span class="bold">우리</span> 1234 - 012 - 567891<br>
+						<span class="bold">신한</span> 123 - 456789 - 10111<br>
+						<span class="bold">농협</span> 123 - 45 - 678910
+					</p>
+				</div>
+				<div class="site about">
+					<div>
+						<p class="family_box">Family Site<i class="fas fa-caret-down"></p></i>
+						<div class="family">
+							<div>
+								<ul>
+									<li><a href="http://www.bing.co.kr/" target="_blank">빙그레 공식 홈페이지</a></li>
+									<li><a href="https://www.instagram.com/binggraekorea/" target="_blank">빙그레 공식
+											인스타그램</a></li>
+									<li><a href="https://www.instagram.com/bingicecream.official/?hl=ko"
+											target="_blank">빙그레 아이스크림 인스타그램</a></li>
+									<li><a href="https://www.youtube.com/channel/UCOmz8eDBQ04h6i0_8p_V7eg"
+											target="_blank">빙그레 공식 유튜브</a></li>
+									<li><a href="https://www.youtube.com/channel/UCsCjDynxKUOu7nY6tIXT25Q"
+											target="_blank">빙그레 바나나우유 유튜브</a></li>
+									<li><a href="https://www.youtube.com/channel/UCxjERPPVyHbina73g8Grn-g"
+											target="_blank">빙그레 아이스크림 유튜브</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="icon">
+						<li><a href="https://www.instagram.com/binggraekorea/" target="_blank"><i
+									class="fab fa-instagram-square"></i></a></li>
+						<li><a href="https://ko-kr.facebook.com/bingbalove/" target="_blank"><i
+									class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCsCjDynxKUOu7nY6tIXT25Q" target="_blank"><i
+									class="fab fa-youtube-square"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		 </div>
+   </body>
+<script>
+
+		 function bana_lt_To(){
+		   var n1= document.getElementById("bana_lt_3").value;
+		   var p1= 3000* n1;
+		   document.getElementById("bana_lt_3_total").value = p1;
+		}
+
+		function bana_lt_To_4(){
+		   var n2= document.getElementById("bana_lt_4").value;
+		   var p2= 4500* n2;
+		   document.getElementById("bana_lt_4_total").value = p2;
+		}
+
+		function bana_lt_To_8(){
+		   var n2= document.getElementById("bana_lt_8").value;
+		   var p2= 9200* n2;
+		   document.getElementById("bana_lt_8_total").value = p2;
+		}
+
+		function bana_lt_To_12(){
+		   var n3= document.getElementById("bana_lt_12").value;
+		   var p3= 11000* n3;
+		   document.getElementById("bana_lt_12_total").value = p3;
+		}
+
+
+		function bana_og_To_3(){
+		   var n3= document.getElementById("bana_og_3").value;
+		   var p3= 3000* n3;
+		   document.getElementById("bana_og_3_total").value = p3;
+		}
+
+		function bana_og_To_4(){
+		   var n4= document.getElementById("bana_og_4").value;
+		   var p4= 4500* n4;
+		   document.getElementById("bana_og_4_total").value = p4;
+		}
+
+		function bana_og_To_8(){
+		   var n5= document.getElementById("bana_og_8").value;
+		   var p5= 9200* n5;
+		   document.getElementById("bana_og_8_total").value = p5;
+		}
+
+   
+		function bana_og_To_12(){
+		   var n5= document.getElementById("bana_og_12").value;
+		   var p5= 11000* n5;
+		   document.getElementById("bana_og_12_total").value = p5;
+		}
+
+
+		function bana_sw_To_3(){
+		   var n6= document.getElementById("bana_sw_3").value;
+		   var p6= 3000* n6;
+		   document.getElementById("bana_sw_3_total").value = p6;
+		}
+
+		function bana_sw_To_4(){
+		   var n7= document.getElementById("bana_sw_4").value;
+		   var p7= 4500* n7;
+		   document.getElementById("bana_sw_4_total").value = p7;
+		}
+
+		function bana_sw_To_8(){
+		   var n8= document.getElementById("bana_sw_8").value;
+		   var p8= 9200* n8;
+		   document.getElementById("bana_sw_8_total").value = p8;
+		}
+
+		function bana_sw_To_12(){
+		   var n9= document.getElementById("bana_sw_12").value;
+		   var p9= 11000* n9;
+		   document.getElementById("bana_sw_12_total").value = p9;
+		}
+
+		function bana_od_To_3(){
+		   var n10= document.getElementById("bana_od_3").value;
+		   var p10= 3000* n10;
+		   document.getElementById("bana_od_3_total").value = p10;
+		}
+
+
+		function bana_od_To_4(){
+		   var n11= document.getElementById("bana_od_4").value;
+		   var p11= 4500* n11;
+		   document.getElementById("bana_od_4_total").value = p11;
+		}
+
+
+		function bana_od_To_8(){
+		   var n12= document.getElementById("bana_od_8").value;
+		   var p12= 9200* n12;
+		   document.getElementById("bana_od_8_total").value = p12;
+		}
+
+
+		function bana_od_To_12(){
+		   var n13= document.getElementById("bana_od_12").value;
+		   var p13= 11000* n13;
+		   document.getElementById("bana_od_12_total").value = p13;
+		}
+
+
+		function bana_va_To_3(){
+		   var n14= document.getElementById("bana_va_3").value;
+		   var p14= 3000* n14;
+		   document.getElementById("bana_va_3_total").value = p14;
+		}
+
+
+		function bana_va_To_4(){
+		   var n15= document.getElementById("bana_va_4").value;
+		   var p15= 4500* n15;
+		   document.getElementById("bana_va_4_total").value = p15;
+		}
+
+		function bana_va_To_8(){
+		   var n16= document.getElementById("bana_va_8").value;
+		   var p16= 9200* n16;
+		   document.getElementById("bana_va_8_total").value = p16;
+		}
+
+		function bana_va_To_12(){
+		   var n17= document.getElementById("bana_va_12").value;
+		   var p17= 11000* n17;
+		   document.getElementById("bana_va_12_total").value = p17;
+		}
+
+		function bana_ta_To_3(){
+		   var n18= document.getElementById("bana_ta_3").value;
+		   var p18= 3000* n18;
+		   document.getElementById("bana_ta_3_total").value = p18;
+		}
+
+
+		function bana_ta_To_4(){
+		   var n19= document.getElementById("bana_ta_4").value;
+		   var p19= 4500* n19;
+		   document.getElementById("bana_ta_4_total").value = p19;
+		}
+
+
+		function bana_ta_To_8(){
+		   var n20= document.getElementById("bana_ta_8").value;
+		   var p20= 9200* n20;
+		   document.getElementById("bana_ta_8_total").value = p20;
+		}
+
+		function bana_ta_To_12(){
+		   var n21= document.getElementById("bana_ta_12").value;
+		   var p21= 11000* n21;
+		   document.getElementById("bana_ta_12_total").value = p21;
+		}
+
+
+		function bana_lc_To_3(){
+		   var n22= document.getElementById("bana_lc_3").value;
+		   var p22= 3000* n22;
+		   document.getElementById("bana_lc_3_total").value = p22;
+		}
+
+
+		function bana_lc_To_4(){
+		   var n23= document.getElementById("bana_lc_4").value;
+		   var p23= 4500* n23;
+		   document.getElementById("bana_lc_4_total").value = p23;
+		}
+
+
+
+		function bana_lc_To_8(){
+		   var n24= document.getElementById("bana_lc_8").value;
+		   var p24= 9200* n24;
+		   document.getElementById("bana_lc_8_total").value = p24;
+		}
+
+
+		function bana_lc_To_12(){
+		   var n25= document.getElementById("bana_lc_12").value;
+		   var p25= 11000* n25;
+		   document.getElementById("bana_lc_12_total").value = p25;
+		}
+
+
+		function bana_can_To_3(){
+		   var n26= document.getElementById("bana_can_3").value;
+		   var p26= 3000* n26;
+		   document.getElementById("bana_can_3_total").value = p26;
+		}
+
+
+		function bana_can_To_4(){
+		   var n27= document.getElementById("bana_can_4").value;
+		   var p27= 4500* n27;
+		   document.getElementById("bana_can_4_total").value = p27;
+		}
+
+		function bana_can_To_8(){
+		   var n28= document.getElementById("bana_can_8").value;
+		   var p28= 9200* n28;
+		   document.getElementById("bana_can_8_total").value = p28;
+		}
+
+		function bana_can_To_12(){
+		   var n29= document.getElementById("bana_can_12").value;
+		   var p29= 11000* n29;
+		   document.getElementById("bana_can_12_total").value = p29;
+		}
+</script>
+<script>
+	var a=1;
+    function product_lt_3(){
+        if(a==1){
+		    
+            document.querySelector("#box_1").style.display = "block";
+            
+            a=0;
+         }
+        else{
+            document.querySelector("#box_1").style.display = "none";
+            a=1;
+           }
+        
+	} 
+
+
+   	var b=1;
+    function product_lt_4(){
+        if(b==1){
+            document.querySelector("#box_2").style.display = "block";
+            b=0;
+        }
+        else{
+            document.querySelector("#box_2").style.display = "none";
+            b=1;
+        }
+    } 
+			   
+
+
+	var c=1;
+    function product_lt_8(){
+        if(c==1){
+            document.querySelector("#box_3").style.display = "block";
+            c=0;
+        }
+        else{
+            document.querySelector("#box_3").style.display = "none";
+            c=1;
+        }
+	} 
+			
+
+	var d=1;
+	function product_lt_12(){
+		if(d==1){
+            document.querySelector("#box_4").style.display = "block";
+            d=0;
+        }
+        else{
+            document.querySelector("#box_4").style.display = "none";
+            d=1;
+        }
+	} 
+
+	var e=1;
+	function product_org_3(){
+		if(e==1){
+            document.querySelector("#box_5").style.display = "block";
+            e=0;
+        }
+        else{
+            document.querySelector("#box_5").style.display = "none";
+            e=1;
+        }
+	}
+
+
+	var f=1;
+	function product_org_4(){
+		if(f==1){
+            document.querySelector("#box_6").style.display = "block";
+            f=0;
+        }
+        else{
+            document.querySelector("#box_6").style.display = "none";
+            f=1;
+        }
+	}
+
+
+	var g=1;
+	function product_org_8(){
+		if(g==1){
+            document.querySelector("#box_7").style.display = "block";
+            g=0;
+        }
+        else{
+            document.querySelector("#box_7").style.display = "none";
+            g=1;
+        }
+	}
+
+
+
+	var h=1;
+	function product_org_12(){
+		if(h==1){
+            document.querySelector("#box_8").style.display = "block";
+            h=0;
+        }
+        else{
+            document.querySelector("#box_8").style.display = "none";
+            h=1;
+        }
+	}
+
+
+
+	var i=1;
+	function product_sw_3(){
+		if(i==1){
+            document.querySelector("#box_9").style.display = "block";
+            i=0;
+        }
+        else{
+            document.querySelector("#box_9").style.display = "none";
+            i=1;
+        }
+	}
+
+
+	var j=1;
+	function product_sw_4(){
+		if(j==1){
+            document.querySelector("#box_10").style.display = "block";
+            j=0;
+        }
+        else{
+            document.querySelector("#box_10").style.display = "none";
+            j=1;
+        }
+	}
+
+
+
+	var k=1;
+	function product_sw_8(){
+		if(k==1){
+            document.querySelector("#box_11").style.display = "block";
+            k=0;
+        }
+        else{
+            document.querySelector("#box_11").style.display = "none";
+            k=1;
+        }
+	}
+
+
+
+	var l=1;
+	function product_sw_12(){
+		if(l==1){
+            document.querySelector("#box_12").style.display = "block";
+            l=0;
+        }
+        else{
+            document.querySelector("#box_12").style.display = "none";
+            l=1;
+        }
+	}
+
+
+
+	var n=1;
+	function product_od_3(){
+		if(n==1){
+            document.querySelector("#box_13").style.display = "block";
+            n=0;
+        }
+        else{
+            document.querySelector("#box_13").style.display = "none";
+            n=1;
+        }
+	}
+
+
+
+	var m=1;
+	function product_od_4(){
+		if(m==1){
+            document.querySelector("#box_14").style.display = "block";
+            m=0;
+        }
+        else{
+            document.querySelector("#box_14").style.display = "none";
+            m=1;
+        }
+	}
+
+
+
+	var o=1;
+	function product_od_8(){
+		if(o==1){
+            document.querySelector("#box_15").style.display = "block";
+            o=0;
+        }
+        else{
+            document.querySelector("#box_15").style.display = "none";
+            o=1;
+        }
+	}
+
+
+
+	var p=1;
+	function product_od_12(){
+		if(p==1){
+            document.querySelector("#box_16").style.display = "block";
+            p=0;
+        }
+        else{
+            document.querySelector("#box_16").style.display = "none";
+            p=1;
+        }
+	}
+
+
+
+
+	var q=1;
+	function product_va_3(){
+		if(q==1){
+            document.querySelector("#box_17").style.display = "block";
+            q=0;
+        }
+        else{
+            document.querySelector("#box_17").style.display = "none";
+            q=1;
+        }
+	}
+
+
+	var r=1;
+	function product_va_4(){
+		if(r==1){
+            document.querySelector("#box_18").style.display = "block";
+            r=0;
+        }
+        else{
+            document.querySelector("#box_18").style.display = "none";
+            r=1;
+        }
+	}
+
+
+
+	var s=1;
+	function product_va_8(){
+		if(s==1){
+            document.querySelector("#box_19").style.display = "block";
+            s=0;
+        }
+        else{
+            document.querySelector("#box_19").style.display = "none";
+            s=1;
+        }
+	}
+
+
+
+	var t=1;
+	function product_va_12(){
+		if(t==1){
+            document.querySelector("#box_20").style.display = "block";
+            t=0;
+        }
+        else{
+            document.querySelector("#box_20").style.display = "none";
+            t=1;
+        }
+	}
+
+
+
+	var u=1;
+	function product_ta_3(){
+		if(u==1){
+            document.querySelector("#box_21").style.display = "block";
+            u=0;
+        }
+        else{
+            document.querySelector("#box_21").style.display = "none";
+            u=1;
+        }
+	}
+
+
+
+	var v=1;
+	function product_ta_4(){
+		if(v==1){
+            document.querySelector("#box_22").style.display = "block";
+            v=0;
+        }
+        else{
+            document.querySelector("#box_22").style.display = "none";
+            v=1;
+        }
+	}
+
+
+
+	var w=1;
+	function product_ta_8(){
+		if(w==1){
+            document.querySelector("#box_23").style.display = "block";
+            w=0;
+        }
+        else{
+            document.querySelector("#box_23").style.display = "none";
+            w=1;
+        }
+	}
+
+
+
+	var x=1;
+	function product_ta_12(){
+		if(x==1){
+            document.querySelector("#box_24").style.display = "block";
+            x=0;
+        }
+        else{
+            document.querySelector("#box_24").style.display = "none";
+            x=1;
+        }
+	}
+
+
+
+	var a_a=1;
+	function product_lc_3(){
+		if(a_a==1){
+            document.querySelector("#box_25").style.display = "block";
+            a_a=0;
+        }
+        else{
+            document.querySelector("#box_25").style.display = "none";
+            a_a=1;
+        }
+	}
+
+
+
+	var a_b=1;
+	function product_lc_4(){
+		if(a_b==1){
+            document.querySelector("#box_26").style.display = "block";
+            a_b=0;
+        }
+        else{
+            document.querySelector("#box_26").style.display = "none";
+            a_b=1;
+        }
+	}
+
+
+
+	var a_c=1;
+	function product_lc_8(){
+		if(a_c==1){
+            document.querySelector("#box_27").style.display = "block";
+            a_c=0;
+        }
+        else{
+            document.querySelector("#box_27").style.display = "none";
+            a_c=1;
+        }
+	}
+
+
+
+	var a_d=1;
+	function product_lc_12(){
+		if(a_d==1){
+            document.querySelector("#box_28").style.display = "block";
+            a_d=0;
+        }
+        else{
+            document.querySelector("#box_28").style.display = "none";
+            a_d=1;
+        }
+	}
+
+
+
+	var a_e=1;
+	function product_can_3(){
+		if(a_e==1){
+            document.querySelector("#box_29").style.display = "block";
+            a_e=0;
+        }
+        else{
+            document.querySelector("#box_29").style.display = "none";
+            a_e=1;
+        }
+	}
+
+
+
+	var a_f=1;
+	function product_can_4(){
+		if(a_f==1){
+            document.querySelector("#box_30").style.display = "block";
+            a_f=0;
+        }
+        else{
+            document.querySelector("#box_30").style.display = "none";
+            a_f=1;
+        }
+	}
+
+
+	var a_g=1;
+	function product_can_8(){
+		if(a_g==1){
+            document.querySelector("#box_31").style.display = "block";
+            a_g=0;
+        }
+        else{
+            document.querySelector("#box_31").style.display = "none";
+            a_g=1;
+        }
+	}
+
+
+
+	var a_h=1;
+	function product_can_12(){
+		if(a_h==1){
+            document.querySelector("#box_32").style.display = "block";
+        	a_h=0;
+        }
+        else{
+            document.querySelector("#box_32").style.display = "none";
+            a_h=1;
+        }
+	}
+</script>
+<script>
+	
+	function view_change(x) {
+		// 매체변수 x 를 줌.
+		var y = document.querySelector("#mlik")
+		y.src = x;
+	    // x값은 this.value 값.
+	}
+
+		
+	$(function () {
+		$('.bxslider').bxSlider({
+			mode: 'horizontal', // 화면전환 모드 vertical,horizontal,'fade' 총 3가지
+			speed: 1000, // 클릭시 슬라이드 움직이는 속도
+			easing: 'ease-in-out', // 움직이는 방법 
+			pager: true,// 아랫쪽 블릿버튼
+
+		});
+	});
+
+	$(function () {
+		$('.main:eq(2) span').eq(1).css('transform','rotate(0deg)');
+		$('.sub').eq(5).css("display", "block").css("background", "rgb(38, 143, 134)");
+		$('.sub span ').eq(5).css("width", "4px");
+		$('.sub').eq(5).css("display", "block");
+	})
+</script>
+</html>

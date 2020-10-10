@@ -1,0 +1,126 @@
+@font-face {
+    font-family: BinggraeB;
+    src: url(../font/Binggrae2Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: BinggraeL;
+    src: url(../font/Binggrae2Light.ttf);
+  }	
+	
+	section {
+		box-sizing : border-box;
+	}
+	article {
+			width : 100%;
+			text-align : center;
+			opacity : 0;
+			margin-top : 40px;
+	}
+	h1 {
+		font-size : 4em;
+		font-family: BinggraeB;
+		font-style : italic;
+	}
+	h3 {
+		font-size : 1.5em;
+		font-family: BinggraeB;
+		font-style: italic;
+	}
+	article p, .fruit_text p {
+		font-family: BinggraeL;
+	}
+	.slider_box {
+		display : flex;
+		justify-content : center;
+		margin : 50px auto;
+		opacity : 0;
+	}
+	.slider_box img {
+		width : 100%;
+	}
+	.bigbox {
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : center;
+    }
+    .fruit {
+        width : 100%;
+        height : 200px;
+    }
+    .fruit_box {
+        width : 30%;
+		opacity : 0;
+    }
+    .fruit_text {
+        width : 70%;
+		padding : 50px;
+		opacity : 0;
+    }
+.fruit_text_left h3, .fruit_text_left p {
+	text-align : right;
+}
+.fruit_text_right h3, .fruit_text_right p {
+	text-align : left;
+}
+
+
+@media screen and (max-width : 1200px) {
+	.fruit_box {
+        width : 35%;
+		opacity : 0;
+    }
+	.fruit_text {
+        width : 65%;
+		padding : 50px;
+		opacity : 0;
+    }
+	h1 {
+		font-size : 3.5em;
+		font-family: BinggraeB;
+		font-style : italic;
+	}
+	h3 {
+		font-size : 1.3em;
+		font-family: BinggraeB;
+		font-style: italic;
+	}
+	p {
+		font-size : 0.9em;
+		font-family: BinggraeL;
+	}
+}
+@media screen and (max-width : 800px) {
+	.slider_box {
+		display : flex;
+		justify-content : center;
+		margin : 50px auto;
+		opacity : 0;
+	}
+	.bigbox {
+		padding : 10px;
+	}
+	.fruit_box {
+        width : 35%;
+		opacity : 0;
+    }
+	.fruit_text {
+        width : 65%;
+		padding : 50px;
+		opacity : 0;
+    }
+	h1 {
+		font-size : 2.5em;
+		font-family: BinggraeB;
+		font-style : italic;
+	}
+	h3 {
+		font-size : 1.2em;
+		font-family: BinggraeB;
+		font-style: italic;
+	}
+	p {
+		font-size : 0.8em;
+		font-family: BinggraeL;
+	}
+}

@@ -1,0 +1,19 @@
+.buttons {
+    position: relative;
+    margin-top:15px;
+    margin-bottom:150px;
+}
+.buttons button {
+    border-radius:10px;
+    box-shadow:3px 3px 3px lightgray;
+    text-shadow:2px 2px 2px lightgray;
+    border:none;
+    padding:10px;
+    font-size:1.2em;
+    font-family: dangdanghae;
+
+}
+.buttons li {
+    float:left;
+    margin:5px 5px;
+}
